@@ -30,6 +30,5 @@ with open(args.inputa, 'r') as beda,open(args.inputb, 'r') as bedb, open(args.ou
                 if intb[1] <= inta[2] and intb[2]>=inta[1]:
                     intervalstart=max(inta[1],intb[1])
                     intervalend=min(inta[2],intb[2])
-                    interval.append((inta[0],intervalstart,intervalend))
                     opt.write(f"{inta[0]}\t{intervalstart}\t{intervalend}\n")
                     break
