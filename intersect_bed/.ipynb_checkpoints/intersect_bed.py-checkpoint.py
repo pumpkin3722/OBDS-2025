@@ -24,7 +24,6 @@ with open(args.inputa, 'r') as beda,open(args.inputb, 'r') as bedb, open(args.ou
         endb=int(result[2])
         lb.append((chrb, startb, endb))
     
-    interval=[]
     for inta in la:
         for intb in lb:
             if inta[0] == intb[0]:

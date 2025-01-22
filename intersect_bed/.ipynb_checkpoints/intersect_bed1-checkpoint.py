@@ -25,10 +25,10 @@ with open(args.inputa, 'r') as beda, open(args.inputb, 'r') as bedb, open(args.o
                         intervalstart = max(starta, startb)
                         intervalend = min(enda, endb)  
                         if args.standardout:
-                            sys.stdout.write(f'{inta[0]}\t{intervalstart}\t{intervalend}\n')
+                            sys.stdout.write(f'{chra}\t{starta}\t{enda}\n')
                             break                   
                         else:
-                            opt.write(f'{inta[0]}\t{intervalstart}\t{intervalend}\n')
+                            opt.write(f'{chra}\t{starta}\t{enda}\n')
                             break
                         
                         
